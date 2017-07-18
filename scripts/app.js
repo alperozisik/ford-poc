@@ -14,10 +14,10 @@ Application.onUnhandledError = function(e) {
 
 
 const Router = require("sf-core/ui/router");
-const stylerBuilder = require("library/styler-builder");
+const stylerBuilder2 = require("library/styler-builder");
 const settings = require("./settings.json");
-stylerBuilder.registerThemes(settings.config.theme.themes || "Defaults");
-stylerBuilder.setActiveTheme(settings.config.theme.currentTheme);
+stylerBuilder2.registerThemes(settings.config.theme.themes || "Defaults");
+stylerBuilder2.setActiveTheme(settings.config.theme.currentTheme);
 
 // Define routes and go to initial page of application
 Router.add("page1", require("./pages/page1"));
